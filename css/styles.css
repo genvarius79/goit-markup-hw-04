@@ -1,0 +1,309 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #434455;
+}
+/*++++++++++++  Reset dofault settings  ++++++++++++++++++++++++++++++*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  display: block;
+}
+/*============  End Reset dofault settings   =============================*/
+
+/* +++++++++++++++++  For general use   +++++++++++++++++++++++++*/
+.head-two {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+.head-three {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.descripsion {
+  color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-self: center;
+}
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+/* ==================  End For general use  =====================*/
+
+/* +++++++++++++++++++  Header  ++++++++++++++++++++++++++++++++ */
+.page-header {
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+.container-header-flex {
+  display: flex;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 76px;
+
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo:focus,
+.logo:hover {
+  color: #404bbf;
+}
+
+.logo-header-spn {
+  color: #2e2f42;
+}
+.nav-bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.nav-links {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+}
+.nav-links:hover,
+.nav-links:focus {
+  color: #404bbf;
+}
+.addr {
+  font-style: normal;
+  margin-left: auto;
+}
+.addr-list {
+  display: flex;
+  gap: 40px;
+}
+.contacts {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.contacts:focus,
+.contacts:hover {
+  color: #404bbf;
+}
+/* ==============   End Header  ============================= */
+
+/* +++++++++++++++++++  Hero  ++++++++++++++++++++++++++++++++ */
+.hero {
+  background: #2e2f42;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-left: auto;
+}
+.btn {
+  padding: 16px 32px;
+  display: inline-flex;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin: 0 auto;
+  gap: 10px;
+
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  background: #404bbf;
+}
+
+.btn:hover {
+  background: #404bbf;
+}
+/* ==============   End Hero  ============================= */
+
+/* ++++++++++++++   About Us  ++++++++++++++++++++++++++++++++ */
+
+.about-as-list {
+  display: flex;
+  gap: 24px;
+}
+.about-list-elements {
+  width: calc((100% - 3 * 24px) / 4);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.heder-three-about {
+  margin-bottom: 8px;
+}
+/* =======   End About Us   ================================== */
+
+/* +++++++++++++++   Our Team   ++++++++++++++++++++++++++++++ */
+
+.our-team {
+  background-color: #f4f4fd;
+}
+.image-box {
+  background: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.heder-two-team {
+  margin-bottom: 72px;
+}
+.our-team-list {
+  display: flex;
+  gap: 24px;
+}
+.name-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.heder-thee-team {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.description-teams {
+  text-align: center;
+}
+/* ==========  End Our Team  =============================== */
+
+/* ++++++++++++Our Portfolio++++++++++++++++++++++++++++++++ */
+.card-content {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  background: #ffffff;
+  padding: 32px 16px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.our-portfolio-items {
+  width: calc((100% - 48px) / 3);
+}
+.heder-two-portf {
+  margin-bottom: 72px;
+}
+.heder-three-portf {
+  margin-bottom: 8px;
+}
+/* ============End Our Portfolio=========================== */
+
+/* +++++++++++   Footer   +++++++++++++++++++++++++++++ */
+
+.page-footer {
+  background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-description {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+.logo-footer-spn {
+  color: #f4f4fd;
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+/* ============   End Footer   =============================== */
