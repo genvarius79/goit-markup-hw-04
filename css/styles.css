@@ -82,10 +82,11 @@ button {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links .icon {
-  fill: #fff;
+  fill: #f4f4fd;
 }
 
 /* ==================  End For general use  =====================*/
@@ -115,6 +116,7 @@ button {
   align-items: center;
   flex-shrink: 0;
   margin-right: 76px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -145,6 +147,11 @@ button {
   line-height: 1.5;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.studio {
+  position: relative;
+  color: #404bbf;
 }
 .studio::after {
   display: block;
@@ -154,6 +161,9 @@ button {
   background-color: #404bbf;
   content: '';
   position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 2px;
 }
 .nav-links:hover,
 .nav-links:focus {
@@ -175,6 +185,7 @@ button {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:focus,
 .contacts:hover {
@@ -184,21 +195,23 @@ button {
 
 /* +++++++++++++++++++  Hero  ++++++++++++++++++++++++++++++++ */
 .hero {
+  max-width: 1440px;
   display: flex;
   flex-shrink: 0;
   justify-content: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: 0 auto;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.png);
+    url(../images/people-office.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px;
+  background-size: cover;
 }
 
 .hero-title {
@@ -223,6 +236,7 @@ button {
   border: none;
   margin: 0 auto;
   gap: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-radius: 4px;
   background-color: #4d5ae5;
@@ -275,6 +289,8 @@ button {
   border-radius: 4px;
   border: 1px solid #8e8f99;
   background: #f4f4fd;
+  height: 112px;
+  margin-bottom: 8px;
 }
 .icon-about {
   margin: 24px 100px;
@@ -314,6 +330,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding: 32px 0;
 }
 .heder-thee-team {
   text-align: center;
@@ -325,6 +342,7 @@ button {
   display: flex;
   gap: 24px;
   flex-shrink: 0;
+  justify-content: center;
 }
 .social-links .icon-link:hover,
 .social-links .icon-link:focus {
@@ -349,8 +367,7 @@ button {
 .our-portfolio-items {
   width: calc((100% - 48px) / 3);
   background: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .portfolio-image {
@@ -368,16 +385,21 @@ button {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-overley {
   margin: 40px 32px 164px 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+}
+.our-portfolio-items:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .our-portfolio-items:hover .overlay {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   transform: translateY(0);
 }
 
@@ -413,7 +435,10 @@ button {
 }
 .footer-group {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+.logo-group {
+  margin-right: 120px;
 }
 .social-container {
   display: flex;
@@ -423,10 +448,11 @@ button {
 .footer-description-icon {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin-bottom: 16px;
 }
 .footer-icon {
   display: flex;
